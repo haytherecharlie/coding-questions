@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Runt Club | Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<div class="mainmenu">
+	<img src="img/logo.jpg">
+
+		<ul>
+		<li><a href="index.html">HOME</a>	</li>
+		<li> &middot; </li>
+		<li><a href="menu.html">MENU</a>	</li>
+		<li> &middot; </li>
+		<li><a href="contact.html">CONTACT</a>	</li>
+		<li> &middot; </li>
+		<li><a href="map.html">MAP & HOURS</a>  </li>
+		<li> &middot; </li>
+		<li><a href="gallery.html">GALLERY</a>  </li>
+		</ul>
+	</div>
+
+	<div class="slider_gallery">
+		<div class="photo_container">
+			<div id="fade1"></div>
+			<div id="fade2"></div>
+			<div id="fade3"></div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="content-title">
+			WELCOME TO THE RUNT CLUB
+		</div>
+		<div class="content-body">
+			You're a fan of full bodied wines, beers and liquers, you have penchant for great music and conversing with best friends in a welcoming enviroment. The Runt Club is your local pub, a place to unwind from the hecktic work day and catch up with those who matter most. <br>
+			We're open late and always serving up hearty platters of food to share or enjoy with a pint of our Toboggan Ale brewed just down the street. We'll keep it cold for when you arrive. 
+		</div>
+	</div>
+	<div class="footer">
+		<ul>
+			<li>&copy; Runt Club 2015</li>
+			<li>|</li>
+			<li>Page by New Vintage Desgin</li>
+			<a href="https://www.facebook.com/FelliniKoolinis" style="float:right; margin-right: 100px;"><img src="img/facebook.png" height="20px"></a>
+			<a href="http://www.yelp.ca/biz/fellini-koolinis-italian-cuisini-london" style="float:right; margin-right: 10px;"><img src="img/yelp.png" height="20px"></a>
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script>
+		var current = 3;
+		var dissapear = true;
+		function fade() {
+			if( current == 1){
+				dissapear = false;
+			}
+			if( current == 3 ){
+				dissapear = true;
+			}
+
+			if(dissapear == true){
+			   	$('#fade' + current).fadeOut(5000);
+			   	--current;
+			   	$('#fade'+ current).fadeIn(3000);
+			   setTimeout(fade,9000);
+			}
+			if(dissapear == false){
+				$('#fade' + current).fadeOut(5000);
+			   	++current;
+			   	$('#fade'+ current).fadeIn(3000);
+			   setTimeout(fade,9000);
+			}
+		}
+		fade();
+	</script>
+
+</body>
+</html>

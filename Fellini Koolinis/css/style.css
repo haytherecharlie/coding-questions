@@ -1,0 +1,359 @@
+@font-face { font-family: "fellini black"; src: url(../fonts/fellini_black.ttf) format("truetype"); }
+@font-face { font-family: "fellini bold"; src: url(../fonts/fellini_bold.ttf) format("truetype"); }
+@font-face { font-family: "fellini light"; src: url(../fonts/fellini_light.ttf) format("truetype"); }
+@font-face { font-family: "fellini"; src: url(../fonts/fellini_regular.ttf) format("truetype"); }
+
+body, html{
+	text-align: center;
+	font-family: fellini light;
+	padding: 0px;
+	margin: 0px;
+	background: url(../img/background.jpg);
+}
+
+.title{
+	width: 800px;
+	margin: 30px auto 20px auto;
+	padding-bottom: -50px;
+}
+	.title strong{
+		font-family: fellini black;
+		font-size: 30px;
+	}
+
+.mainmenu{
+	width: 800px;
+	margin: 0px auto 50px auto;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	text-align: center;
+}
+	.mainmenu li{
+		margin-right: 10px;
+		display: inline-block;
+		text-transform: uppercase;
+		line-height: 27px;
+	}
+	.mainmenu a:link, a:active, a:visited{
+		text-decoration: none;
+		color: #000;
+	}
+	.mainmenu a:hover{
+		text-decoration: underline;
+		color: #000;
+	}
+
+.slider_gallery{
+	height: 500px;
+	width: 100%;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+
+	.photo_container{
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+		#fade1{
+			height: 100%;
+			width: 100%;
+			background-image: url(../img/dish00.jpg);
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+		#fade2{
+			height: 100%;
+			width: 100%;
+			background-image: url(../img/dish01.jpg);
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+		#fade3{
+			height: 100%;
+			width: 100%;
+			background-image: url(../img/dish02.jpg);
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			position: absolute;
+		}
+
+
+.content{
+	width: 800px;
+	margin: 50px auto 90px auto;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+	.content-title{
+		font-family: fellini light;
+		font-size: 20px;
+		letter-spacing: 2px;
+		height: 50px;
+		border-bottom: 2px solid #000;
+	}
+	.content-body{
+		padding-top: 40px;
+		text-align: left;
+		font-family: fellini light;
+		line-height: 30px;
+	}
+
+	.content-left{
+		padding-top: 40px;
+		width: 400px;
+		float: left;
+		text-align: left;
+		font-family: fellini light;
+		line-height: 30px;
+			box-sizing: border-box;
+	}
+		.content-left iframe{
+			border: 0px;
+			height: 375px;
+			width: 375px;
+			border-left: 1px solid #000;
+		}
+	.content-right{
+		padding-top: 40px;
+		width: 400px;
+		float: right;
+		text-align: left;
+		font-family: fellini light;
+		line-height: 30px;
+	}
+		.content-right iframe{
+			border: 0px;
+			height: 750px;
+			width: 400px;
+			border-left: 1px solid #000;
+		}
+
+.footer{
+	height: 40px;
+	width: 100%;
+	border-top: 1px solid #333; 
+	padding-top: 10px;
+	font-size: 10px;
+	font-family: fellini bold;
+	text-align: left;
+}
+
+	.footer li{
+		margin-left: 5px;
+		display: inline-block;
+	}
+
+
+#reservation-info{
+	margin-top: 50px;
+	padding-right: 20px;
+}
+
+.cuttingboard{
+	width: 100%;
+	height: 1300px;
+	background-image: url(../img/cutting_board.jpg);
+	background-size: cover;
+	border-top: 1px solid #000;
+	padding-top: 50px;
+}
+	.menu-container{
+		margin: 0px auto;
+		padding: 50px; 
+		height: 1150px;
+		width: 700px;
+		background-color: #fff;
+		border: 1px solid #000;
+		box-shadow: 3px 3px 5px #000;
+		text-align: center;
+	}
+		.menu-container img{
+			height: 150px; 
+			border-bottom: 1px solid #000;
+		}
+		.menu-menu{
+			width: 700px;
+			padding-top: 40px;
+		}
+			.menu-menu button{
+				font-size: 17px;
+				background-color: transparent;
+				border: 0px;
+				font-family: fellini light;
+				cursor: pointer;
+				text-transform: uppercase;
+				margin: 0px 10px;
+			}
+			.menu-menu button:hover{
+				text-decoration: underline;
+			}
+
+			li{
+				list-style-type: none;
+			}
+
+		#appetizer_menu{
+			width: 700px;
+			font-family: fellini;
+			text-align: center;
+			display: visible;
+		}
+			#appetizer_menu h3{
+				font-size: 18px;
+				font-family: fellini;
+				font-weight: lighter;
+				margin-top: 90px;
+			}
+			#appetizer_menu li{
+				display: block;
+				font-weight: lighter;
+				font-size: 13px;
+				letter-spacing: 2px;
+				margin-left: -20px;
+				line-height: 50px;
+			}
+
+		#entree_menu{
+			width: 700px;
+			font-family: fellini;
+			text-align: center;
+			display: none;
+		}
+			#entree_menu h3{
+				font-size: 18px;
+				font-family: fellini;
+				font-weight: lighter;
+				margin-top: 60px;
+			}
+			#entree_menu li{
+				display: block;
+
+				font-weight: lighter;
+				font-size: 13px;
+				letter-spacing: 2px;
+				margin-left: -20px;
+				line-height: 50px;
+			}
+
+		#pizza_menu{
+			width: 700px;
+			font-family: fellini;
+			text-align: center;
+			display: none;
+		}
+			#pizza_menu h3{
+				font-size: 18px;
+				font-family: fellini;
+				font-weight: lighter;
+				margin-top: 100px;
+			}
+			#pizza_menu li{
+				display: block;
+				font-weight: lighter;
+				font-size: 13px;
+				letter-spacing: 2px;
+				margin-left: -20px;
+				line-height: 50px;
+			}
+		#pasta_menu{
+			width: 700px;
+			font-family: fellini;
+			text-align: center;
+			display: none;
+		}
+			#pasta_menu h3{
+				font-size: 18px;
+				font-family: fellini;
+				font-weight: lighter;
+				margin-top: 70px;
+			}
+			#pasta_menu li{
+				display: block;
+				font-weight: lighter;
+				font-size: 13px;
+				letter-spacing: 2px;
+				margin-left: -20px;
+				line-height: 50px;
+			}
+		#noodles_at_noon{
+			width: 700px;
+			font-family: fellini;
+			text-align: center;
+			display: none;
+		}
+			#noodles_at_noon h3{
+				font-size: 18px;
+				font-family: fellini;
+				font-weight: lighter;
+				margin-top: 70px;
+			}
+			#noodles_at_noon li{
+				display: block;
+				font-weight: lighter;
+				font-size: 13px;
+				letter-spacing: 2px;
+				margin-left: -20px;
+				line-height: 50px;
+			}
+		#lunch_menu{
+			width: 700px;
+			font-family: fellini;
+			text-align: center;
+			display: none;
+		}
+			#lunch_menu h3{
+				font-size: 18px;
+				font-family: fellini;
+				font-weight: lighter;
+				margin-top: 70px;
+			}
+			#lunch_menu li{
+				display: block;
+				font-weight: lighter;
+				font-size: 13px;
+				letter-spacing: 2px;
+				margin-left: -20px;
+				line-height: 50px;
+			}
+
+.gallerybox{
+    width: 900px;
+    height: 450px;
+    margin: 20px auto;
+}
+
+    .photo-button{
+        height: 450px;
+        width: 100px;
+        float: left;
+    }
+
+        .photo-button button{
+            margin-top: 175px;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            background-color: #fff;
+            font-size: 50px;
+        }
+
+    #photophoto{
+        width: 700px;
+        height: 450px;
+        text-align: center;
+        float: left;
+        background-image: url(../gallery/01.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: 0px 0px 10px #000;
+    }
+
+
+

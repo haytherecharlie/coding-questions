@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toboggan Brewing Company - London, Canada</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+
+		<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/animate.js"></script>
+  	<script type="text/javascript" src="js/mobile.min.js"></script>
+  	<script type="text/javascript">DM_redirect("mobile/mobile.html");</script>
+
+</head>
+<body>
+
+	<!--************************** 
+
+	LEFT PANE 
+
+	***************************--> 
+
+	<!-- 1. BREWERY -->
+	<div class="l-slider" id="brewery">
+		<img src="img/our_story.png" id="ourstoryimg">
+		<div id="ourstorytext">
+			<p>
+			The origin of our name is an ode to our Forest City heritage, which was a tobogganing mecca in the late 1800's.
+			Toboggan clubs existed all over London, becoming so famous, they attracted visitors from around the world including famed author Mark Twain.
+			</p>
+			<img src="img/twain.png" id="twain">
+			<p>
+			Massive wooden ramps were built all over London including sites at: Victoria Park, Western University, the original Carling Brewery on Ann St., and beside the Labatt Brewery.  The most impressive ramp was a 485 foot long double chute, located across from us at Wellington and Central near Victoria Park.
+			</p>
+			<img src="img/chalklogo.png">
+			<p>
+			It's in this spirit of toboganning, where people from London and area come together to have fun and enjoy locally made beer and food, that we bring you the Toboggan Brewing Company.
+			</p>
+		</div>
+	</div>
+
+	<!-- 3. FOOD -->
+	<div class="l-slider" id="food">
+		<img src="menus/food1.jpg">
+		<img src="menus/food2.jpg">
+	</div>
+
+	<!-- 5. GALLERY -->
+	<div class="l-slider" id="gallery">
+		<img src="img/photogallerylogo.png"><br>
+		<button class="gallery" id="a" onclick="full_photo(0)"></button>
+		<button class="gallery" id="b" onclick="full_photo(1)"></button>
+		<button class="gallery" id="c" onclick="full_photo(2)"></button>
+		<button class="gallery" id="d" onclick="full_photo(3)"></button>
+		<button class="gallery" id="e" onclick="full_photo(4)"></button>
+		<button class="gallery" id="f" onclick="full_photo(5)"></button>
+		<button class="gallery" id="g" onclick="full_photo(6)"></button>
+		<button class="gallery" id="h" onclick="full_photo(7)"></button>
+		<button class="gallery" id="i" onclick="full_photo(8)"></button>
+		<button class="gallery" id="j" onclick="full_photo(9)"></button>
+		<button class="gallery" id="k" onclick="full_photo(10)"></button>
+		<button class="gallery" id="l" onclick="full_photo(11)"></button>
+
+	</div>
+
+	<!-- 7. LOCAL -->
+	<div class="l-slider" id="local">
+		<div id="localband">
+			<div id="localpara">
+			The Toboggan Brewing Company is committed to using local ingredients grown and raised here in southwestern Ontario. This is why we call our kitchen the 519Kitchen, because we believe that providing fresh ingredients ensures that our beer and food taste their very best. 
+<!-- 			Below is a list of amazing people and companies in our area that we would like to recognize.  -->
+			</div>
+		</div>
+	</div>
+
+	<!-- 9. HOURS-MAP -->
+	<div class="l-slider" id="hours-map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11673.80105822784!2d-81.2511909!3d42.9898526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6645c9446c43f2a!2sToboggan+Brewing+Company!5e0!3m2!1sen!2sca!4v1445208688594" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+	<div id="blackbox">
+			<h2>Hours</h2>
+			<table>
+			<tr><td id="day">Monday</td><td>11:00am till 11:00pm</td></tr>
+			<tr><td id="day">Tuesday</td><td>11:00am till 11:00pm</td></tr>
+			<tr><td id="day">Wednesday</td><td>11:00am till 11:00pm</td></tr>
+			<tr><td id="day">Thursday</td><td>11:00am till 11:00pm</td></tr>
+			<tr><td id="day">Friday</td><td>11:00am till 2:00am</td></tr>
+			<tr><td id="day">Saturday</td><td>11:00am till 2:00am</td></tr>
+			<tr><td id="day">Sunday</td><td>11:00am till 11:00pm</td></tr>
+			</table> 
+		</div>
+	</div>
+
+	<!--**************************
+
+	CENTER PANE 
+	
+	***************************-->
+	<div class="page" id="page">
+
+		<div class="main-menu" id="main-menu">
+			
+			<!-- OUR BREWERY -->
+			<input class="m-button" type="button" value="Our Brewery" onclick="left_animate('brewery')" />
+
+			<!-- BEER LIST -->
+			<input class="m-button" type="button" value="Beer List" onclick="right_animate('beers')" />
+
+			<!-- FOOD MENU -->
+			<input class="m-button" type="button" value="Food Menu" onclick="left_animate('food')" />
+
+			<!-- PRESS -->
+			<input class="m-button" type="button" value="Press" onclick="right_animate('press')" />
+
+			<!-- PHOTO GALLERY -->
+			<input class="m-button" type="button" value="Photo Gallery" onclick="left_animate('gallery')" />			
+
+			<!-- TOBOGGAN STORE -->
+			<input class="m-button" type="button" value="Toboggan Store" onclick="right_animate('store')" />
+
+			<!-- LOCAL LINKS -->
+			<input class="m-button" type="button" value="Local Links" onclick="left_animate('local')" />
+
+			<!-- CONTACT -->
+			<input class="m-button" type="button" value="Contact" onclick="right_animate('contact')" />
+
+			<!-- HOURS AND MAP -->
+			<input class="m-button" type="button" value="Hours and Map" onclick="left_animate('hours-map')" />
+
+			<img src="img/menu.jpg">
+		</div>
+		
+		<!-- SHADOW PANE -->
+		<div class="shadow" id="shadow">
+			<button class="s-button" onclick="left_animate('page')" id="l-button"><img src="img/l-arrow.png"></button>
+			<button class="s-button" onclick="right_animate('page')" id="r-button"><img src="img/r-arrow.png"></button>
+		</div>
+
+		<!-- SHEET -->
+		<div id="sheet">
+			<button onclick="full_photo();">X</button><br>
+			<img src="gallery/img0.jpg" id="sheetimg">
+		</div>
+	</div>
+
+	<!--***************************
+	
+	RIGHT PANE 
+
+	****************************-->
+
+	<!-- 2. BEERS -->
+	<div class="r-slider" id="beers">
+		<img src="menus/toboggans_own.jpg">
+		<img src="menus/guest_drafts.jpg">
+		<img src="menus/specialty_cocktails.jpg">
+		<img src="menus/bottles_from_everywhere.jpg">	
+	</div>
+
+	<!-- 4. PRESS -->
+	<div class="r-slider" id="press">
+		<img src="img/presstitle.png" id="presstitle">
+		
+		<div id="pressleft"><a href="http://www.lfpress.com/2015/01/01/new-brew-echoes-heritage">
+		<img src="img/lpf.png"></a>
+		</div>
+		<div id="pressright"><a href="http://www.am980.ca/2015/04/16/local-craft-brewing-companies/">
+		<img src="img/am980.png"></a>
+		</div>
+		<div id="pressleft"><a href="http://canadianrestaurantnews.com/ontario/latest-news/longstanding-london-pub-rebranding">
+		<img src="img/restaurantnews.png"></a>
+		</div>
+		<div id="pressright"><a href="http://www.canadianbeernews.com/2015/01/06/toboggan-brewing-co-opening-soon-in-london/">
+		<p>
+		<img src="img/canadianbeernews.png"></a>
+		</div>
+		<div id="pressleft"><p>
+		<a href="http://jimbyerstravel.com/2015/07/08/london-ontario-and-st-thomas-great-beer-food-and-more">
+		<img src="img/jimbuyersblog.png"></a>
+		</div>
+	</div>
+
+	<!-- 6. STORE -->
+	<div class="r-slider" id="store">
+		<img src="img/tobogganstorelogo.png">
+		<div id="band">
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11673.80105822784!2d-81.2511909!3d42.9898526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6645c9446c43f2a!2sToboggan+Brewing+Company!5e0!3m2!1sen!2sca!4v1445208688594" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div id="hours">
+				<h2>Beer Store Hours</h2>	
+				Monday<br> 11:00 am to 11:00 om<br>
+				Tuesday<br>	11:00 am to 11:00 om<br>
+				Wednesday<br>	11:00 am to 11:00 pm<br>
+				Thursday<br>	11:00 am to 11:00 pm<br>
+				Friday<br>	11:00 am to 11:00 pm<br>
+				Saturday<br>	11:00 am to 11:00 pm<br>
+				Sunday<br>	11:00 am to 11:00 pm<br>
+			</div>
+		</div>
+	</div>
+
+	<!-- 8. CONTACT -->
+	<div class="r-slider" id="contact">
+		<iframe src="contact.html"></iframe>
+	</div>
+
+</body>
+</html>
